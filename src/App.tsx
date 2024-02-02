@@ -1,6 +1,6 @@
 function App(): JSX.Element {
   return (
-    <div>
+    <div className="h-screen w-screen global-background">
       Main page
     </div>
   );
