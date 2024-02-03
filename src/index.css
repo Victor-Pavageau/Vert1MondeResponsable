@@ -10,22 +10,10 @@
   padding: 0;
 }
 
-.global-background {
-  background: -moz-linear-gradient(
-    135deg,
-    rgba(146, 183, 100, 1) 0%,
-    rgba(70, 95, 44, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    135deg,
-    rgba(146, 183, 100, 1) 0%,
-    rgba(70, 95, 44, 1) 100%
-  );
-  background: linear-gradient(
-    135deg,
-    rgba(146, 183, 100, 1) 0%,
-    rgba(70, 95, 44, 1) 100%
-  );
+.overview-background {
+  background-image: url('./assets/wave.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1,
@@ -36,7 +24,7 @@ h4 {
 }
 
 h1 {
-  @apply text-5xl;
+  @apply lg:text-7xl text-5xl;
 }
 
 h2 {
