@@ -1,11 +1,5 @@
 import { useEffect, useState } from 'react';
-
-type Countdown = {
-  days: string;
-  hours: string;
-  minutes: string;
-  seconds: string;
-}
+import type { Countdown } from '../types';
 
 function Countdown(): JSX.Element {
   const eventStartTime: Date = new Date('2024-04-17 14:00:00');
