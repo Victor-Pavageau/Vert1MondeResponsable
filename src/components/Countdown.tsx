@@ -67,12 +67,12 @@ function Countdown(): JSX.Element {
   };
 
   return (
-    <div className="flex flex-col gap-14 justify-center items-center">
-      <h3>
+    <div className="flex flex-col gap-10 justify-center items-center">
+      <span className="text-xl">
         {
           countdownTitle
         }
-      </h3>
+      </span>
       {
         (loadEventTime() && countdown) && (
           <div className="flex gap-20 text-[#465f2c]">
