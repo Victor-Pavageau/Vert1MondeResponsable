@@ -3,6 +3,7 @@ import EventPresentation from './components/EventPresentation';
 import Navbar from './components/Navbar';
 import WorkshopsList from './components/WorkshopsList';
 import Map from './components/Map';
+import Contact from './components/Contact';
 
 function App(): JSX.Element {
   return (
@@ -20,6 +21,7 @@ function App(): JSX.Element {
       <EventPresentation />
       <WorkshopsList />
       <Map />
+      <Contact />
     </>
   );
 }

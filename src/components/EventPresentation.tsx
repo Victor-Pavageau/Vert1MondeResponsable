@@ -2,7 +2,7 @@ function EventPresentation(): JSX.Element {
   return (
     <>
       <div className="mt-24 flex justify-center">
-        <h2>
+        <h2 >
           Présentation de l'évenement
         </h2>
       </div>

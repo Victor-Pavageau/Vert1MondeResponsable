@@ -16,6 +16,10 @@
   background-size: cover;
 }
 
+.footer-background {
+  background: linear-gradient(135deg, #95b764 0%, #475f2c 100%);
+}
+
 .main-title {
   text-decoration: underline;
   text-decoration-color: #cee1e9;
@@ -23,6 +27,10 @@
   text-decoration-thickness: 2rem;
   text-underline-offset: -1.2rem;
   text-decoration-skip-ink: none;
+}
+
+.hover-link {
+  @apply hover:bg-white p-2 rounded-xl cursor-pointer;
 }
 
 h1,
