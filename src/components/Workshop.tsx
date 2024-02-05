@@ -9,7 +9,7 @@ function Workshop(props: Props): JSX.Element {
   const { workshop } = props;
 
   return (
-    <div className={`flex gap-20 items-center ${(workshop !== workshopsList.slice(-1)[0]) && 'mb-24'} ${workshop.id % 2 === 0 && 'flex-row-reverse'}`}>
+    <div className={`flex flex-col gap-5 lg:gap-20 lg:flex-row items-center ${(workshop !== workshopsList.slice(-1)[0]) && 'mb-10 lg:mb-24'} ${workshop.id % 2 === 0 && 'lg:!flex-row-reverse'}`}>
       <div>
         <h3 className="mb-5">
           {workshop.name}

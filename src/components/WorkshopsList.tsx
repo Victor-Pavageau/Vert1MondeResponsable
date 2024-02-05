@@ -10,7 +10,7 @@ function WorkshopsLit(): JSX.Element {
           Nos ateliers
         </h2>
       </div>
-      <div className="mt-10 mx-60 flex flex-col justify-center">
+      <div className="mt-10 mx-10 lg:mx-60 text-sm lg:text-base flex flex-col justify-center">
         {
           workshopsList.map((workshop) => (
             <div key={nanoid()}>

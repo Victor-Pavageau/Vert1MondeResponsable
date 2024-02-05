@@ -20,23 +20,31 @@ function Navbar(): JSX.Element {
 
   return (
     <div className="w-full h-20 text-black">
-      <img className="h-24 w-auto float-left ml-5 mt-2" src={logo} alt="Vert un monde responsable logo" />
-      <div className="h-full flex justify-between align-middle items-center lg:mx-80">
+      <img className="h-16 lg:h-24 w-auto float-left ml-5 mt-2" src={logo} alt="Vert un monde responsable logo" />
+      <div className="h-full flex justify-evenly md:justify-between align-middle items-center md:mx-40 xl:mx-80">
         <a className="hover-link text-black flex gap-3 items-center" href="#presentation">
           <FaHotel size={logoSize} />
-          L'évenement
+          <div className="hidden lg:flex">
+            L'évenement
+          </div>
         </a>
         <a className="hover-link text-black flex gap-3 items-center" href="#ateliers">
           <GiHutsVillage size={logoSize + 10} />
-          Les ateliers
+          <div className="hidden lg:flex">
+            Les ateliers
+          </div>
         </a>
         <a className="hover-link text-black flex gap-3 items-center" href="#lieu">
           <MdLocationPin size={logoSize + 5} />
-          Le lieu
+          <div className="hidden lg:flex">
+            Le lieu
+          </div>
         </a>
         <a className="hover-link text-black flex gap-3 items-center" href="#contact">
           <FaPhone size={logoSize} />
-          Contact
+          <div className="hidden lg:flex">
+            Contact
+          </div>
         </a>
       </div>
     </div>

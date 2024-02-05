@@ -61,7 +61,7 @@ function Countdown(): JSX.Element {
   };
 
   return (
-    <div className="flex flex-col gap-10 justify-center items-center">
+    <div className="flex flex-col w-full gap-10 justify-center items-center">
       <span className="text-xl">
         {
           countdownTitle
@@ -69,19 +69,19 @@ function Countdown(): JSX.Element {
       </span>
       {
         (loadEventTime() && countdown) && (
-          <div className="flex gap-20 text-[#465f2c]">
-            <h2>
+          <div className="flex flex-col lg:flex-row gap-5 lg:gap-20 text-[#465f2c] w-full">
+            <h3 className="w-full flex justify-center">
               {getCountdown(countdown).days} jours
-            </h2>
-            <h2>
+            </h3>
+            <h3 className="w-full flex justify-center">
               {getCountdown(countdown).hours} heures
-            </h2>
-            <h2>
+            </h3>
+            <h3 className="w-full flex justify-center">
               {getCountdown(countdown).minutes} minutes
-            </h2>
-            <h2>
+            </h3>
+            <h3 className="w-full flex justify-center">
               {getCountdown(countdown).seconds} secondes
-            </h2>
+            </h3>
           </div>
         )
       }

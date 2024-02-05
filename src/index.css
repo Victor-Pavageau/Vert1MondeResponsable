@@ -25,8 +25,8 @@
   text-decoration: underline;
   text-decoration-color: #cee1e9;
   text-decoration-style: solid;
-  text-decoration-thickness: 2rem;
-  text-underline-offset: -1.2rem;
+  text-decoration-thickness: 1.5rem;
+  text-underline-offset: -0.5rem;
   text-decoration-skip-ink: none;
 }
 
@@ -42,17 +42,13 @@ h4 {
 }
 
 h1 {
-  @apply lg:text-7xl text-5xl;
+  @apply xl:text-6xl md:text-5xl text-4xl;
 }
 
 h2 {
-  @apply lg:text-5xl text-4xl;
+  @apply xl:text-5xl text-3xl;
 }
 
 h3 {
-  @apply text-3xl;
-}
-
-h4 {
-  @apply text-2xl;
+  @apply xl:text-4xl lg:text-3xl text-2xl;
 }
