@@ -2,6 +2,7 @@ import Countdown from './components/Countdown';
 import EventDescription from './components/EventDescription';
 import Navbar from './components/Navbar';
 import WorkshopsList from './components/WorkshopsList';
+import Map from './components/Map';
 
 function App(): JSX.Element {
   return (
@@ -18,6 +19,7 @@ function App(): JSX.Element {
       <Countdown />
       <EventDescription />
       <WorkshopsList />
+      <Map />
     </>
   );
 }
