@@ -1,5 +1,5 @@
 import Countdown from './components/Countdown';
-import EventDescription from './components/EventDescription';
+import EventPresentation from './components/EventPresentation';
 import Navbar from './components/Navbar';
 import WorkshopsList from './components/WorkshopsList';
 import Map from './components/Map';
@@ -17,7 +17,7 @@ function App(): JSX.Element {
         </div>
       </div>
       <Countdown />
-      <EventDescription />
+      <EventPresentation />
       <WorkshopsList />
       <Map />
     </>

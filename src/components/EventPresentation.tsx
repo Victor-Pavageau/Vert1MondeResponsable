@@ -1,4 +1,4 @@
-function EventDescription(): JSX.Element {
+function EventPresentation(): JSX.Element {
   return (
     <>
       <div className="mt-24 flex justify-center">
@@ -21,4 +21,4 @@ function EventDescription(): JSX.Element {
   );
 }
 
-export default EventDescription;
+export default EventPresentation;
