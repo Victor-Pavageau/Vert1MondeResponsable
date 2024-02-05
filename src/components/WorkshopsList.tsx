@@ -6,7 +6,7 @@ function WorkshopsLit(): JSX.Element {
   return (
     <>
       <div className="mt-24 flex justify-center">
-        <h2>
+        <h2 id="ateliers">
           Nos ateliers
         </h2>
       </div>

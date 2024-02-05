@@ -2,7 +2,7 @@ function Map(): JSX.Element {
   return (
     <div className="mt-24 mx-32">
       <div className="flex justify-center">
-        <h2>
+        <h2 id="lieu">
           Venez nous rendre visite
         </h2>
       </div>
