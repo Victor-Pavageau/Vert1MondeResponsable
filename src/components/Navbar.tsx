@@ -3,7 +3,7 @@ function Navbar(): JSX.Element {
 
   return (
     <div className="w-full h-20 text-black">
-      <img className="h-20 w-auto float-left ml-5 mt-2" src={logo} alt="Vert un monde responsable logo" />
+      <img className="h-24 w-auto float-left ml-5 mt-2" src={logo} alt="Vert un monde responsable logo" />
       <div className="h-full flex justify-between align-middle items-center lg:mx-80">
         <div className="hover:bg-white p-2 rounded-xl cursor-pointer">
           L'évenement

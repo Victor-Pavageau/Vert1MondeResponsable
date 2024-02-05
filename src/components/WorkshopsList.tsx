@@ -5,7 +5,7 @@ import Workshop from './Workshop';
 function WorkshopsLit(): JSX.Element {
   return (
     <>
-      <div className="mt-32 ml-32">
+      <div className="mt-24 flex justify-center">
         <h2>
           Nos ateliers
         </h2>

@@ -1,7 +1,7 @@
 function EventDescription(): JSX.Element {
   return (
     <>
-      <div className="mt-32 ml-32">
+      <div className="mt-24 flex justify-center">
         <h2>
           Présentation de l'évenement
         </h2>
