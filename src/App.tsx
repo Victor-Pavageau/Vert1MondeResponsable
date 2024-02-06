@@ -1,9 +1,4 @@
-import Countdown from './components/Countdown';
-import EventPresentation from './components/EventPresentation';
-import Navbar from './components/Navbar';
-import WorkshopsList from './components/WorkshopsList';
-import Map from './components/Map';
-import Contact from './components/Contact';
+import { Contact, Countdown, EventPresentation, Navbar, WorkshopsList, Map } from './components';
 
 function App(): JSX.Element {
   return (

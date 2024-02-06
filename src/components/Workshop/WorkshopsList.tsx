@@ -1,5 +1,5 @@
 import { nanoid } from 'nanoid';
-import { workshopsList } from '../data/workshopsList';
+import { workshopsList } from '../../data/workshopsList';
 import Workshop from './Workshop';
 
 function WorkshopsLit(): JSX.Element {

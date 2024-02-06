@@ -1,4 +1,4 @@
-export interface Workshop {
+export interface WorkshopType {
   id: number;
   name: string;
   description: string;

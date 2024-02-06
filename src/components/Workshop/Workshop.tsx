@@ -1,8 +1,8 @@
-import { workshopsList } from '../data/workshopsList';
-import type { Workshop } from '../types';
+import { workshopsList } from '../../data/workshopsList';
+import type { WorkshopType } from '../../types';
 
 type Props = {
-  workshop: Workshop;
+  workshop: WorkshopType;
 };
 
 function Workshop(props: Props): JSX.Element {
