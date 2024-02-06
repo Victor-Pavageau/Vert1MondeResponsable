@@ -11,7 +11,12 @@ function Countdown(): JSX.Element {
     const leftTime = loadEventTime();
     if (leftTime !== undefined) {
       const interval = setInterval(() => {
-        setCountdown(leftTime.getTime() - Date.now());
+        if (leftTime.getTime() - Date.now() > 0) {
+          setCountdown(leftTime.getTime() - Date.now());
+        }
+        else {
+          setCountdown(eventEndTime.getTime() - eventStartTime.getTime());
+        }
         setCountdownTitle(getCountdownTitle());
       }, 1000);
       return () => {
@@ -19,11 +24,10 @@ function Countdown(): JSX.Element {
       };
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [countdown]);
 
   const loadEventTime = (): Date | undefined => {
     if (Date.now() < eventStartTime.getTime()) {
-      // return eventStartTime;
       return eventStartTime;
     }
     else if (Date.now() < eventEndTime.getTime()) {
