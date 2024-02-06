@@ -6,7 +6,8 @@ import { MdLocationPin } from 'react-icons/md';
 
 function Navbar(): JSX.Element {
   const location = useLocation();
-  const logo = '../src/assets/logo.png';
+  const logo = '../../src/assets/logo.png';
+
   const logoSize = 20;
 
   useEffect(() => {
