@@ -12,7 +12,7 @@ function App(): JSX.Element {
         <Navbar />
         <div className="flex justify-center w-full lg:justify-between items-center lg:mt-20">
           <h1 className="text-center lg:text-start lg:ml-10 mt-14 lg:mt-0 xl:ml-32 lg:max-w-md xl:max-w-sm leading-snug text-[#325C72] main-title select-none w-full flex justify-center">
-            Vert un monde plus responsable
+            Vert un monde responsable
           </h1>
           <img className="mr-10 xl:mr-32 hidden lg:flex lg:max-h-56 xl:max-h-64 rounded-xl" src='https://hips.hearstapps.com/hmg-prod/images/alpe-di-siusi-sunrise-with-sassolungo-or-langkofel-royalty-free-image-1623254127.jpg' alt="Illustration de l'évennement" />
         </div>
