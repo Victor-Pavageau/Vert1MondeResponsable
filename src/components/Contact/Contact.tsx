@@ -6,7 +6,7 @@ function Contact(): JSX.Element {
   return (
     <div className="mt-24 text-white footer-background flex flex-col items-center">
       <div className="flex justify-center pt-12">
-        <h2 id="contact">
+        <h2 id="contact" className="text-center">
           Nous contacter
         </h2>
       </div>

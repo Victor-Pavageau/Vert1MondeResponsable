@@ -1,12 +1,12 @@
 import { nanoid } from 'nanoid';
-import { workshopsList } from '../data/workshopsList';
+import { workshopsList } from '../../data/workshopsList';
 import Workshop from './Workshop';
 
 function WorkshopsLit(): JSX.Element {
   return (
     <>
       <div className="mt-24 flex justify-center">
-        <h2 id="ateliers">
+        <h2 id="ateliers" className="text-center">
           Nos ateliers
         </h2>
       </div>

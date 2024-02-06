@@ -1,6 +1,6 @@
-import { Workshop } from '../types';
+import { WorkshopType } from '../types';
 
-export const workshopsList: Workshop[] = [
+export const workshopsList: WorkshopType[] = [
   {
     id: 1,
     name: 'Groupe 1',

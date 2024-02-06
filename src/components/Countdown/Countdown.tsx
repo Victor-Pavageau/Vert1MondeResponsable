@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import type { Countdown } from '../types';
+import type { CountdownType } from '../../types';
 
 function Countdown(): JSX.Element {
   const eventStartTime: Date = new Date('2024-04-17 14:00:00');
@@ -11,7 +11,12 @@ function Countdown(): JSX.Element {
     const leftTime = loadEventTime();
     if (leftTime !== undefined) {
       const interval = setInterval(() => {
-        setCountdown(leftTime.getTime() - Date.now());
+        if (leftTime.getTime() - Date.now() > 0) {
+          setCountdown(leftTime.getTime() - Date.now());
+        }
+        else {
+          setCountdown(eventEndTime.getTime() - eventStartTime.getTime());
+        }
         setCountdownTitle(getCountdownTitle());
       }, 1000);
       return () => {
@@ -19,11 +24,10 @@ function Countdown(): JSX.Element {
       };
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [countdown]);
 
   const loadEventTime = (): Date | undefined => {
     if (Date.now() < eventStartTime.getTime()) {
-      // return eventStartTime;
       return eventStartTime;
     }
     else if (Date.now() < eventEndTime.getTime()) {
@@ -34,7 +38,7 @@ function Countdown(): JSX.Element {
     }
   };
 
-  const getCountdown = (countdown: number): Countdown => {
+  const getCountdown = (countdown: number): CountdownType => {
     const seconds = Math.floor((countdown / 1000) % 60);
     const minutes = Math.floor((countdown / 1000 / 60) % 60);
     const hours = Math.floor((countdown / (1000 * 60 * 60)) % 24);
@@ -62,7 +66,7 @@ function Countdown(): JSX.Element {
 
   return (
     <div className="flex flex-col w-full gap-10 justify-center items-center">
-      <span className="text-xl">
+      <span className="text-xl text-center">
         {
           countdownTitle
         }
