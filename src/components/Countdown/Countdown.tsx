@@ -65,12 +65,12 @@ function Countdown(): JSX.Element {
   };
 
   return (
-    <div className="flex flex-col w-full gap-10 justify-center items-center">
-      <span className="text-xl text-center">
+    <div className="flex flex-col w-full gap-10 justify-center items-center mt-12">
+      <h4 className="text-center">
         {
           countdownTitle
         }
-      </span>
+      </h4>
       {
         (loadEventTime() && countdown) && (
           <div className="flex flex-col lg:flex-row gap-5 lg:gap-20 text-[#465f2c] w-full">

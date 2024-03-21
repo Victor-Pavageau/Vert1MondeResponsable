@@ -28,6 +28,7 @@
   text-decoration-thickness: 1.5rem;
   text-underline-offset: -0.5rem;
   text-decoration-skip-ink: none;
+  @apply leading-snug text-[#325C72] select-none;
 }
 
 .hover-link {
@@ -42,13 +43,17 @@ h4 {
 }
 
 h1 {
-  @apply xl:text-6xl md:text-5xl text-4xl;
+  @apply text-6xl;
 }
 
 h2 {
-  @apply xl:text-5xl text-3xl;
+  @apply text-5xl;
 }
 
 h3 {
-  @apply xl:text-4xl lg:text-3xl text-2xl;
+  @apply text-4xl;
+}
+
+h4 {
+  @apply text-3xl;
 }
