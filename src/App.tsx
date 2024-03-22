@@ -13,13 +13,13 @@ function App(): JSX.Element {
           </h1>
           <img
             className="mr-10 xl:mr-32 hidden lg:flex lg:max-h-56 xl:max-h-64 rounded-xl"
-            src='https://hips.hearstapps.com/hmg-prod/images/alpe-di-siusi-sunrise-with-sassolungo-or-langkofel-royalty-free-image-1623254127.jpg'
+            src='./assets/event_illustration.webp'
             alt="Illustration de l'évennement" />
         </div>
         <h2 className='mt-auto mb-10 w-full text-center'>
           Mercredi 17 avril à 14h00 à Darwin
         </h2>
-        <div className='mb-28'>
+        <div className='mb-10'>
           <Link to='#presentation' className='text-[#465f2c]'>
             <div className='w-full flex gap-2 text-center align-middle justify-center'>
               <IoIosArrowDown size={25} className='animate-bounce mt-2' />

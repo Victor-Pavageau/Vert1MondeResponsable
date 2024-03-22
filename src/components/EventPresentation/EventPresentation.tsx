@@ -1,7 +1,7 @@
 function EventPresentation(): JSX.Element {
   return (
     <>
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-24">
         <h2 id="presentation" className="text-center">
           Présentation de l'évenement
         </h2>
