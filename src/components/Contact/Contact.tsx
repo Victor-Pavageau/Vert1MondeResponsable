@@ -1,4 +1,4 @@
-import { FaRegEnvelope, FaLinkedinIn, FaInstagram } from 'react-icons/fa6';
+import { FaRegEnvelope, FaLinkedinIn, FaInstagram, FaFacebookF } from 'react-icons/fa6';
 
 function Contact(): JSX.Element {
   const logoSize = 35;
@@ -23,10 +23,16 @@ function Contact(): JSX.Element {
             vert1monderesponsable
           </div>
         </a>
-        <a className="flex justify-center gap-3 items-center hover-link text-white hover:text-[#465f2c]" href="https://www.linkedin.com/" rel="noopener noreferrer" target="_blank">
+        <a className="flex justify-center gap-3 items-center hover-link text-white hover:text-[#465f2c]" href="https://www.linkedin.com/company/vert-un-monde-responsable/" rel="noopener noreferrer" target="_blank">
           <FaLinkedinIn size={logoSize} />
           <div className="hidden lg:flex">
             vert1monderesponsable
+          </div>
+        </a>
+        <a className="flex justify-center gap-3 items-center hover-link text-white hover:text-[#465f2c]" href="https://www.facebook.com/vert.un.monde.responsable" rel="noopener noreferrer" target="_blank">
+          <FaFacebookF size={logoSize} />
+          <div className="hidden lg:flex">
+            Vert un monde responsable
           </div>
         </a>
       </div>
