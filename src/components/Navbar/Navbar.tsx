@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { FaHotel, FaPhone } from 'react-icons/fa6';
 import { GiHutsVillage } from 'react-icons/gi';
 import { MdLocationPin } from 'react-icons/md';
@@ -14,14 +14,16 @@ function Navbar(): JSX.Element {
     if (location.hash) {
       const element = document.getElementById(location.hash.slice(1));
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView();
       }
     }
   }, [location.hash]);
 
   return (
     <div className="w-full h-20 text-black">
-      <img className="h-16 lg:h-24 w-auto float-left ml-5 mt-2" src={logo} alt="Vert un monde responsable logo" />
+      <Link to={''}>
+        <img className="h-16 lg:h-24 w-auto float-left ml-5 mt-2" src={logo} alt="Vert un monde responsable logo" />
+      </Link>
       <div className="h-full flex justify-evenly md:justify-between align-middle items-center md:mx-40 xl:mx-80">
         <a className="hover-link text-black flex gap-3 items-center" href="#presentation">
           <FaHotel size={logoSize} />
