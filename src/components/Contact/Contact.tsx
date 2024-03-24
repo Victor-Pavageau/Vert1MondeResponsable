@@ -13,25 +13,25 @@ function Contact(): JSX.Element {
       <div className="pb-12 mt-10 flex justify-evenly w-full">
         <a className="flex justify-center gap-3 items-center hover-link text-white hover:text-[#465f2c]" href="mailto:vert1monderesponsable@gmail.com" rel="noopener noreferrer" target="_blank">
           <FaRegEnvelope size={logoSize} />
-          <div className="hidden lg:flex">
+          <div className="hidden xl:flex">
             vert1monderesponsable@gmail.com
           </div>
         </a>
         <a className="flex justify-center gap-3 items-center hover-link text-white hover:text-[#465f2c]" href="https://www.instagram.com/vert1monderesponsable/" rel="noopener noreferrer" target="_blank">
           <FaInstagram size={logoSize} />
-          <div className="hidden lg:flex">
+          <div className="hidden xl:flex">
             vert1monderesponsable
           </div>
         </a>
         <a className="flex justify-center gap-3 items-center hover-link text-white hover:text-[#465f2c]" href="https://www.linkedin.com/company/vert-un-monde-responsable/" rel="noopener noreferrer" target="_blank">
           <FaLinkedinIn size={logoSize} />
-          <div className="hidden lg:flex">
+          <div className="hidden xl:flex">
             vert1monderesponsable
           </div>
         </a>
         <a className="flex justify-center gap-3 items-center hover-link text-white hover:text-[#465f2c]" href="https://www.facebook.com/vert.un.monde.responsable" rel="noopener noreferrer" target="_blank">
           <FaFacebookF size={logoSize} />
-          <div className="hidden lg:flex">
+          <div className="hidden xl:flex">
             Vert un monde responsable
           </div>
         </a>

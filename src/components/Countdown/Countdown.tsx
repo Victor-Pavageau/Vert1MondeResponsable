@@ -3,7 +3,7 @@ import type { CountdownType } from '../../types';
 
 function Countdown(): JSX.Element {
   const eventStartTime: Date = new Date('2024-04-17 14:00:00');
-  const eventEndTime: Date = new Date('2024-04-17 18:00:00');
+  const eventEndTime: Date = new Date('2024-04-17 17:30:00');
   const [countdown, setCountdown] = useState<number>();
   const [countdownTitle, setCountdownTitle] = useState<string>();
 

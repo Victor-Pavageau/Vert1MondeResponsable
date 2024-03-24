@@ -12,11 +12,11 @@ function App(): JSX.Element {
             Vert un monde responsable
           </h1>
           <img
-            className="mr-10 xl:mr-32 hidden lg:flex lg:max-h-56 xl:max-h-64 rounded-xl"
+            className="mr-10 xl:mr-32 hidden lg:flex lg:h-64 xl:h-72 rounded-xl"
             src='./assets/event_illustration.webp'
             alt="Illustration de l'évennement" />
         </div>
-        <h2 className='mt-auto mb-10 w-full text-center'>
+        <h2 className='mt-auto mb-10 w-full text-center text-3xl lg:text-5xl'>
           Mercredi 17 avril à 14h00 à Darwin
         </h2>
         <div className='mb-10'>

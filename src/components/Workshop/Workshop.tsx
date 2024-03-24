@@ -10,7 +10,7 @@ function Workshop(props: Props): JSX.Element {
 
   return (
     <div className={`flex flex-col w-full gap-5 lg:gap-20 lg:flex-row items-center ${(workshop !== workshopsList.slice(-1)[0]) && 'mb-10 lg:mb-24'} ${workshop.id % 2 === 0 && 'lg:!flex-row-reverse'}`}>
-      <div className='w-1/2'>
+      <div className='lg:w-1/2'>
         <h3 className="mb-5">
           {workshop.name}
         </h3>
@@ -18,7 +18,7 @@ function Workshop(props: Props): JSX.Element {
           {workshop.description}
         </p>
       </div>
-      <div className='w-1/2'>
+      <div className='lg:w-1/2'>
         <img className="max-w-full rounded" src={workshop.image} alt={workshop.name} />
       </div>
     </div>
