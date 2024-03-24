@@ -20,7 +20,7 @@ function EventPresentation(): JSX.Element {
         <div>
           L'ingénierie durable est bien plus qu'une discipline, c'est une philosophie qui vise à créer des solutions innovantes tout en préservant notre planète. C'est l'art de concevoir, construire et innover tout en respectant les équilibres naturels. L'ingénierie durable façonne un monde où la technologie et la nature coexistent harmonieusement.
           Cette rencontre entre étudiants et le public permettra d'engager des discussions stimulantes sur l'avenir de l'ingénierie et son impact sur notre planète.
-          Ensemble, faisons de l'ingénierie un moteur de changement positif pour notre planète. 🌏💙
+          Ensemble, faisons de l'ingénierie un moteur de changement positif pour notre planète. 🌱
         </div>
       </div>
     </>
