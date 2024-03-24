@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Contact, Countdown, EventPresentation, Navbar, WorkshopsList, Map } from './components';
+import { Contact, Countdown, Credit, EventPresentation, Navbar, WorkshopsList, Map } from './components';
 import { IoIosArrowDown } from 'react-icons/io';
 
 function App(): JSX.Element {
@@ -20,7 +20,7 @@ function App(): JSX.Element {
           Mercredi 17 avril à 14h00 à Darwin
         </h2>
         <div className='mb-10'>
-          <Link to='#presentation' className='text-[#465f2c]'>
+          <Link to='#presentation' className='text-[#465f2c] deconone'>
             <div className='w-full flex gap-2 text-center align-middle justify-center'>
               <IoIosArrowDown size={25} className='animate-bounce mt-2' />
               <h4>
@@ -36,6 +36,7 @@ function App(): JSX.Element {
       <WorkshopsList />
       <Map />
       <Contact />
+      <Credit />
     </>
   );
 }
