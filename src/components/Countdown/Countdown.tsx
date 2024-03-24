@@ -3,7 +3,7 @@ import type { CountdownType } from '../../types';
 
 function Countdown(): JSX.Element {
   const eventStartTime: Date = new Date('2024-04-17 14:00:00');
-  const eventEndTime: Date = new Date('2024-04-17 18:00:00');
+  const eventEndTime: Date = new Date('2024-04-17 17:30:00');
   const [countdown, setCountdown] = useState<number>();
   const [countdownTitle, setCountdownTitle] = useState<string>();
 
@@ -23,7 +23,6 @@ function Countdown(): JSX.Element {
         clearInterval(interval);
       };
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [countdown]);
 
   const loadEventTime = (): Date | undefined => {
@@ -74,16 +73,16 @@ function Countdown(): JSX.Element {
       {
         (loadEventTime() && countdown) && (
           <div className="flex flex-col lg:flex-row gap-5 lg:gap-20 text-[#465f2c] w-full">
-            <h3 className="w-full flex justify-center">
+            <h3 className="countdown-item">
               {getCountdown(countdown).days} jours
             </h3>
-            <h3 className="w-full flex justify-center">
+            <h3 className="countdown-item">
               {getCountdown(countdown).hours} heures
             </h3>
-            <h3 className="w-full flex justify-center">
+            <h3 className="countdown-item">
               {getCountdown(countdown).minutes} minutes
             </h3>
-            <h3 className="w-full flex justify-center">
+            <h3 className="countdown-item">
               {getCountdown(countdown).seconds} secondes
             </h3>
           </div>

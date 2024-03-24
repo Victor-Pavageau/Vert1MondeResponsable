@@ -1,0 +1,7 @@
+.contact-item {
+  @apply flex justify-center gap-3 items-center  text-white hover:text-[#465f2c];
+}
+
+.contact-item-label {
+  @apply hidden xl:flex;
+}
