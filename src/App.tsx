@@ -16,8 +16,11 @@ function App(): JSX.Element {
             src='./assets/event_illustration.webp'
             alt="Illustration de l'évennement" />
         </div>
-        <h2 className='mt-auto mb-10 w-full text-center text-3xl lg:text-5xl'>
-          Mercredi 17 avril à 14h00 à Darwin
+        <h2 className='mt-auto mb-7 w-full text-center text-3xl lg:text-5xl'>
+          Mercredi 17 avril
+        </h2>
+        <h2 className='mb-12 w-full text-center text-3xl lg:text-4xl'>
+          De 14h00 à 18h30
         </h2>
         <div className='mb-10'>
           <Link to='#presentation' className='text-[#465f2c] deconone'>
