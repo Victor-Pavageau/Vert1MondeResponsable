@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import { workshopsList } from '../../data/workshopsList';
 import type { WorkshopType } from '../../types';
 
@@ -7,6 +8,7 @@ type Props = {
 
 function Workshop(props: Props): JSX.Element {
   const { workshop } = props;
+  const navigate = useNavigate();
 
   const isLastWorkshop = workshop === workshopsList[workshopsList.length - 1];
 
@@ -17,7 +19,9 @@ function Workshop(props: Props): JSX.Element {
       ${workshop.id % 2 === 0 && 'lg:!flex-row-reverse'}
       `}>
       <div className='lg:w-1/2'>
-        <h3 className="mb-5">
+        <h3 className="mb-5" onClick={() => {
+          workshop.id === 4 && navigate('/activity-workshop-4');
+        }}>
           {workshop.name}
         </h3>
         <p className='whitespace-pre-wrap'>
