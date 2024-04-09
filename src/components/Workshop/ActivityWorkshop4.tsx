@@ -1,16 +1,14 @@
 import { Switch, Carousel } from 'antd';
 import { useState } from 'react';
 import { imageList } from '../../data/imageList';
+import { nanoid } from 'nanoid';
 
 function ActivityWorkshop4(): JSX.Element {
   const [goodAnswer, setGoodAnswer] = useState(false);
 
   return (
     <div className='w-screen h-screen bg-[#303030]'>
-      <div className='pt-10 flex items-center gap-5 text-white justify-center'>
-        <h4 className='font-thin'>
-          Description détaillée
-        </h4>
+      <div className='pt-2 pr-2 flex justify-end'>
         <Switch
           defaultChecked={goodAnswer}
           onChange={(checked: boolean) => {
@@ -18,10 +16,10 @@ function ActivityWorkshop4(): JSX.Element {
           }} />
       </div>
       <div className='w-1/4 h-1/4 mx-auto pt-20'>
-        <Carousel autoplay={false} dots style={{ width: '100%', height: '100%' }}>
+        <Carousel autoplay={false} dots>
           {
             imageList.map((image) => (
-              <img src={image.src} alt={goodAnswer ? image.goodAlt : image.badAlt} />
+              <img src={image.src} alt={goodAnswer ? image.goodAlt : image.badAlt} key={nanoid()} />
             ))
           }
         </Carousel>
